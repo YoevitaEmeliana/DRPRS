@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRPRS</title>
+    <link rel="stylesheet" href="Research.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="box--header">
+        <div class="box--logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="box--navigasi">
+            <ul class="box--subnavigasi">
+                <li class="box--iconmenu">
+                    <a class="box--judul" href="Home.html" style="--i: 1">
+                        <div><img class="box--icon" src="Home.png" /></div>
+                        <p class="box--tulisan">Home</p>
+                    </a>
+                </li>
+                <li class="box--iconmenu">
+                    <a class="box--judul" href="Research.html" style="--i: 1">
+                        <div><img class="box--icon" src="Research.png" /></div>
+                        <p class="box--tulisan">Research</p>
+                    </a>
+                </li>
+                <li class="box--iconmenu">
+                    <a class="box--judul" href="Profile.html" style="--i: 2">
+                        <div><img class="box--icon" src="Profile.png" /></div>
+                        <p class="box--tulisan">Profile</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+         <!--Menu Toggle-->
+         <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+    <main>
+        <div class="welcome-box">
+            <h1>Tabel penelitian yang pernah dilakukan</h1>
+        </div>
+
+        <h2 class="box--additional-text">
+            Ini adalah kumpulan penelitian yang pernah dilakukan    
+        </h2>
+
+        <a href="index.html">
+            <div class="box--btn"></div>
+        </a>
+
+        <div class="box--profile">
+            <div class="box--profile-image">
+                <img src="profile.jpg" alt="Profile Image">
+            </div>
+            <div class="box--profile-text">
+                <p>Nama: John Doe</p>
+                <p>Univ: <a href="https://www.example.com">Example University</a></p>
+                <p>Jabatan: Researcher</p>
+            </div>
+        </div>
+
+        <div class="box--former-members">
+            <h3>Former Members</h3>
+            <ul>
+                <li>Jane Smith, <a href="https://www.example.com">Example University</a>, Former Researcher</li>
+                <li>John Doe, <a href="https://www.example2.com">Another University</a>, Former Assistant</li>
+            </ul>
+        </div>
+    </main>
+    <footer class="box--footer">
+        <p>Copyright © 2024 Department of Geophysics FMIPA Unpad</p>
+    </footer>
+
+    <!--My JavaScript-->
+    <script src="research.js"></script>
+</body>
+</html>

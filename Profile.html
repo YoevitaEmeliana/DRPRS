@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRPRS</title>
+    <link rel="stylesheet" href="Profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="box--header">
+        <div class="box--logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="box--navigasi">
+            <ul class="box--subnavigasi">
+                <li class="box--iconmenu">
+                    <a class="box--judul" href="Home.html" style="--i: 1">
+                        <div><img class="box--icon" src="Home.png" /></div>
+                        <p class="box--tulisan">Home</p>
+                    </a>
+                </li>
+                <li class="box--iconmenu">
+                    <a class="box--judul" href="Research.html" style="--i: 1">
+                        <div><img class="box--icon" src="Research.png" /></div>
+                        <p class="box--tulisan">Research</p>
+                    </a>
+                </li>
+                <li class="box--iconmenu">
+                    <a class="box--judul" href="Profile.html" style="--i: 2">
+                        <div><img class="box--icon" src="Profile.png" /></div>
+                        <p class="box--tulisan">Profile</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--Menu Toggle-->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="center-text">
+            <h1>Profile Members</h1>
+        </div>
+    
+
+        <div class="profile-container">
+            <div class="profile-box">
+                <img src="SP.jpg" alt="Foto Profil 1" class="profile-img">
+                <div class="profile-content">
+                    <h2>Member Name 1</h2>
+                    <p><a href="#">University 1</a></p>
+                    <p>Position 1</p>
+                </div>
+            </div>
+            <div class="profile-box">
+                <img src="SP.jpg" alt="Foto Profil 2" class="profile-img">
+                <div class="profile-content">
+                    <h2>Member Name 2</h2>
+                    <p><a href="#">University 2</a></p>
+                    <p>Position 2</p>
+                </div>
+            </div>
+            <div class="profile-box">
+                <img src="SP.jpg" alt="Foto Profil 3" class="profile-img">
+                <div class="profile-content">
+                    <h2>Member Name 3</h2>
+                    <p><a href="#">University 3</a></p>
+                    <p>Position 3</p>
+                </div>
+            </div>
+            <div class="profile-box">
+                <img src="SP.jpg" alt="Foto Profile 4" class="profile-img">
+                <div class="profile-content">
+                    <h2>Member Name 4</h2>
+                    <p><a href="#">University 4</a></p>
+                    <p>Position 4</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box--additional-text">
+            <h2>Former Members</h2>
+            <ul>
+                <li>Member Name 1 - <a href="#">University 1</a> - Posisition 1</li>
+                <li>Member Name 2 - <a href="#">University 2</a> - Posisition 2</li>
+                <li>Member Name 3 - <a href="#">University 3</a> - Posisition 3</li>
+                <li>Member Name 4 - <a href="#">University 4</a> - Posisition 4</li>
+                <!-- tambahkan lebih banyak sesuai kebutuhan -->
+            </ul>
+        </div>
+
+        <a href="index.html">
+            <div class="box--btn"></div>
+        </a>
+    </main>
+
+    <!--My JavaScript-->
+    <script src="profile.js"></script>
+
+    <footer class="box--footer">
+        <p>Copyright © 2024 Department of Geophysics FMIPA Unpad</p>
+    </footer>
+</body>
+</html>

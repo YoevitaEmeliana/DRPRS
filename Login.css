@@ -1,0 +1,190 @@
+/* Gaya CSS untuk halaman login */
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #610404; /* Mengubah warna latar belakang keseluruhan */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 10px; /* Mengurangi jarak antara logo dan kontainer login */
+}
+
+.logo-container .logo {
+  width: 200px; /* Ukuran logo */
+  height: auto;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 15px; /* Mengurangi padding kontainer */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan pada kontainer login */
+  max-width: 800px; /* Lebar kontainer */
+  width: 90%;
+  height: auto; /* Tinggi kontainer disesuaikan dengan konten */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+  margin-right: 20px; /* Memberi jarak kanan antara gambar dan login */
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 400px; /* Tinggi gambar diperbesar */
+  display: none;
+  transition: opacity 0.5s ease-in-out; /* Menambahkan transisi smooth */
+  opacity: 0;
+}
+
+.image-container img.active {
+  display: block;
+  opacity: 1;
+}
+
+.login-container {
+  flex: 1;
+  text-align: left; /* Menyelaraskan konten secara horizontal ke kiri */
+  padding: 15px; /* Mengurangi padding kontainer login */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-container h2 {
+  margin-top: 0;
+  color: #333333;
+  font-size: 1.5em; /* Ukuran font untuk pesan "Welcome back!" */
+  margin-bottom: 10px; /* Mengurangi jarak di bawah h2 */
+}
+
+#login-form {
+  margin-top: 10px; /* Mengurangi jarak di atas form login */
+  width: 100%;
+}
+
+#login-form label {
+  display: block;
+  margin-bottom: 5px; /* Mengurangi jarak di bawah label */
+}
+
+#password {
+  padding: 10px;
+  width: 100%; /* Memaksimalkan lebar input password */
+  margin-bottom: 10px; /* Mengurangi jarak di bawah input */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan pada input password */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: auto; /* Mengatur lebar tombol login agar menyesuaikan dengan isi teks */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan pada tombol login */
+  align-self: flex-start; /* Menyelaraskan tombol login ke kiri */
+  margin-top: 5px; /* Mengurangi jarak di atas tombol */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#error-message {
+  display: block;
+  margin-bottom: 10px; /* Mengurangi jarak di bawah pesan error */
+}
+
+/* Media queries for responsive design */
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .container {
+    width: 70%;
+  }
+
+  .image-container img {
+    max-height: 400px; /* Tinggi gambar disesuaikan */
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1000px) {
+  .container {
+    width: 80%;
+  }
+
+  .image-container img {
+    max-height: 350px; /* Tinggi gambar disesuaikan */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: auto;
+    flex-direction: column; /* Mengubah flex-direction menjadi column */
+  }
+
+  .content-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .image-container {
+    flex: 1;
+    text-align: center;
+    margin-right: 10px; /* Mengurangi jarak kanan antara gambar dan login */
+  }
+
+  .login-container {
+    flex: 1;
+    text-align: left; /* Menyelaraskan konten secara horizontal ke kiri */
+    padding-left: 15px; /* Mengurangi padding kiri kontainer login */
+  }
+
+  button {
+    align-self: flex-start; /* Menyelaraskan tombol login ke kiri */
+    margin-top: 5px; /* Mengurangi jarak atas */
+  }
+}
+
+@media (max-width: 414px) {
+  .container {
+    width: 95%;
+  }
+
+  .logo-container .logo {
+    width: 120px;
+  }
+
+  button {
+    width: 70%;
+  }
+
+  .login-container h2 {
+    font-size: 1.2em;
+  }
+
+  #password {
+    padding: 8px;
+  }
+}
+
